@@ -1,0 +1,21 @@
+<!-- <span
+class="glyphicon"
+[class.glyphicon-heart]="isfavorite"
+[class.glyphicon-heart-empty]="!isfavorite"
+(click)="onFavoriteClick()">
+</span> -->
+
+<!-- [class.fa-heart]="isfavorite"
+     [class.fa-heart-o]="!isfavorite"
+ -->
+
+<i class="fa"
+
+[ngClass]="{
+    'fa-heart' : isfavorite , 
+    'fa-heart-o' : !isfavorite
+           }"
+
+(click)="onFavoriteClick()">
+<!-- aria-hidden="true" (click)="onFavoriteClick()"> -->
+</i>

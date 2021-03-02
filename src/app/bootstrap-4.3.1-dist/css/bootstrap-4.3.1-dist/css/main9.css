@@ -1,0 +1,179 @@
+ul {
+    position: relative;
+    height: 85px;
+    float: right;
+    background-color: blueviolet;
+    width: 65%;
+    border-radius: 15px;
+    font-size: 50px;}
+
+li {
+    float: right  !important;
+}
+
+i {
+    font-size: 50px;
+}
+
+ul i {
+    color: white;
+}
+
+ul i:hover {
+    color: blueviolet;
+}
+
+
+.nav-tabs{
+    float: right;
+      margin-right: 20px;
+      border: 1px solid #ccc;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background: #ddd;  
+}
+.nav-tabs>li{
+    float: none;
+}
+.nav-tabs>li>a{
+    margin-right: 0;  
+}
+.tab-content{
+    border-bottom: 1px solid #ccc; 
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+
+.tab-content h3 {
+    color: #ccc;
+    font-size: 20px;
+}
+
+
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.vertical-tab{
+    font-family: 'Barlow', sans-serif;
+    display: table;
+}
+.vertical-tab .nav-tabs{
+    display: table-cell;
+    width: 28%;
+    min-width: 28%;
+    padding: 13px 0 0;
+    vertical-align: top;
+    border: none;
+    position: relative;
+}
+.vertical-tab .nav-tabs li{
+    float: none;
+    vertical-align: top;
+    position: relative;
+}
+.vertical-tab .nav-tabs li a{
+    color: #333;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px 10px;
+    margin: 0 3px -4px 0;
+    border-radius: 40px;
+    border: 4px solid #333;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li a:hover,
+.vertical-tab .nav-tabs li.active a,
+.vertical-tab .nav-tabs li.active a:hover{
+    color: #fff;
+    background-color: #fff;
+    border: 4px solid #333;
+}
+.vertical-tab .nav-tabs li a:before,
+.vertical-tab .nav-tabs li a:after{
+    content: '';
+    background: linear-gradient(to right,#F05B21, #F37621, #F05B21);
+    border-radius: 35px;
+    opacity: 0;
+    transform: scale(0.1);
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    z-index: -1;
+    transition: all 0.3s ease 0.1s;
+}
+.vertical-tab .nav-tabs li a:after{
+    background: transparent;
+    border: 5px solid #F05B21;
+    opacity: 0;
+    transform: scale(1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li.active a:before,
+.vertical-tab .nav-tabs li a:hover:before{
+    opacity: 1;
+    transform: scale(1);
+}
+.vertical-tab .nav-tabs li.active a:after,
+.vertical-tab .nav-tabs li a:hover:after{
+    opacity: 1;
+    transform: scale(0.1);
+}
+.vertical-tab .tab-content{
+    color: #fff;
+    background: linear-gradient(to right,#F05B21, #F37621, #F05B21);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    padding: 15px 15px 10px;
+    margin-top: 10px;
+    border: 7px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 0 4px #333;
+    display: table-cell;
+    position: relative;
+}
+.vertical-tab .tab-content h3{
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 7px 0;
+}
+@media only screen and (max-width: 479px){
+    .vertical-tab{
+        padding: 0;
+        margin: 0;
+    }
+    .vertical-tab .nav-tabs{
+        width: 100%;
+        display: block;
+        margin: 0 0 4px;
+    }
+    .vertical-tab .tab-content{
+        font-size: 14px;
+        margin-top: 0;
+        display: block;
+    }
+    .vertical-tab .tab-content h3{ font-size: 18px; }
+}
+JavaScript (Vertical Tab depend on jQuery and Bootstrap.)
+1
+2
+<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=bestjquery.com&callback=_gfp_s_&client=ca-pub-3311815518700050&cookie=ID%3D505c27337e9e6168-22f3e0f271ba000c%3AT%3D1613223027%3ART%3D1613223027%3AS%3DALNI_MY8t2csNGCHnHQgJu3OHrSNGWCL6g"></script><script src="https://pagead2.googlesyndication.com/pagead/js/r20210211/r20190131/show_ads_impl_fy2019.js" id="google_shimpl"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+License Terms

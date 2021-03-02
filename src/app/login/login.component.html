@@ -1,0 +1,81 @@
+<!-- <form #f="ngForm" (ngSubmit)="submit(f)">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email"  
+      name="email" ngModel #email="ngModel" url
+      (change)="logObj(email)"
+      minlength="10"
+      pattern="ahmed@itshare.com"
+      class="form-control"
+       id="exampleInputEmail1"
+       >
+       <p *ngIf="email.errors?.url">error message</p>
+        <div *ngIf="email.touched && email.invalid" class="alert alert-danger">
+            <div *ngIf="email.errors.required">
+                Please  Enter Your Email Address
+            </div>
+            <div *ngIf="email.errors.minlength">
+                Min Length Is {{ email.errors.minlength.requiredLength }}
+            </div>
+        </div>
+        <div *ngIf="email.errors.pattern">
+            Invalid Pattern
+        </div>
+     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> 
+    </div>
+
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" [disabled]="f.invalid" class="btn btn-primary">Submit</button>
+  </form> -->
+
+  <form [formGroup]="form" (ngSubmit)="login()">
+    <div class="form-group">
+      <div *ngIf="form.errors" class="alert alert.danger">
+        Username Or Password Incorrect
+      </div>
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" 
+      class="form-control" 
+      formControlName="email"
+      id="email"
+      #email>
+    </div>
+
+    <div *ngIf="email.pending">
+      <img src="https://i.gifer.com/DzUu.gif" width="100" height="50" alt="">
+    </div>
+
+    <div *ngIf="email.touched && email.invalid" class="alert alert-danger">
+      <div *ngIf="email.errors.shouldBeUnique">Email Already Exist</div>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="text" 
+
+      formControlName="password"
+      class="form-control"
+      id="exampleInputPassword1">
+
+     <div *ngIf="password.touched && password.invalid" class="alert alert-danger">
+        <div *ngIf="password.errors.noSpaceAllowed">No Space permitted</div>
+    </div>
+ </div>
+
+    <div class="form-group">
+
+
+      <input type="text" formControlName="age" />
+    <p *ngIf="age.errors?.range">error message</p>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

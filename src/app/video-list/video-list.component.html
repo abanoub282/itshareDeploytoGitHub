@@ -1,0 +1,83 @@
+ <!-- <h2>{{ getTitle() }}</h2> -->
+ <!-- <h2 [textContent]="title"></h2> -->
+ <!-- <h2 [innerHTML]="title"></h2>
+ <img src="{{ imgUrl }}" alt="">
+ <img [src]="imgUrl" alt=""> -->
+
+ <!-- <input type="text" [value]="inputValue"> -->
+
+
+ <!-- <br><br>
+ <ul class="list-group">
+    <li 
+    *ngFor="let post of posts; let first = first"
+    [class.active]="currentId === post.id"
+    [style.backgroundColor]="currentId === post.id ? 'red' : 'gray'"
+    class="list-group-item">{{ post.title }}</li>
+  </ul> -->
+
+<!-- <p>video-list works! {{ title }}</p> -->
+<!-- <h2> {{ "The Tittle Is: " + title}}</h2> -->
+<!-- <h2>{{ title.length ? title : 'the component has no title' }}</h2> -->
+<!-- <h2>{{ title() }}</h2> -->
+
+<!-- <ul>
+    <li *ngFor = "let student of students">{{ student }}</li>
+</ul>
+
+ <div *ngFor="let post of posts">
+     <h3>{{ post.title }}</h3>
+     <p>{{ post.body }}</p>
+ </div> -->
+
+ <!-- <ul *ngIf="videos.length">
+    <li *ngFor="let video of videos">{{ video.title }}</li>
+ </ul>
+
+ <div *ngIf="!videos .length">You dont have videos yet!</div> -->
+
+ <!-- <ul *ngIf="videos.length; else noVideos">
+  <li *ngFor="let video of videos">{{ video.title }}</li>
+ </ul>
+
+ <ng-template #noVideos>You dont have video yset!</ng-template> -->
+ 
+<!-- <ng-container *ngIf="videos.length; then videosList else noVideos"></ng-container>
+
+<ng-template #videosList>
+  <ul>
+    <li *ngFor="let video of videos">{{ video.title }}</li>
+   </ul>
+</ng-template>
+ 
+
+<ng-template #noVideos>You dont have video yset!</ng-template> -->
+
+<!-- <ul [hidden]="!videos.length">
+  <li *ngFor="let video of videos">{{ video.title }}</li>
+</ul>
+
+<div [hidden]="videos.length">You dont have videos Yet!</div> -->
+
+<!-- <button (click)="showVideo()">Show Video</button>
+
+<ul class="video-list" [hidden]="!videos.length">
+  <li
+  class="video-list__item"
+  [class="video-list__item--even"]="isEven"
+  *ngFor="let video of videos; even as isEven; let i = index; trackBy: trackVideos">
+  {{ video.title }}
+  <button (click)="removeVideo(i)">Delete</button>
+</li>
+</ul>
+<div [hidden]="videos.length">You dont have videos Yet!</div> -->
+
+
+
+<!-- <li class="video-list" *ngFor="let v of videos">{{v.title}}</li>
+<button (click)="removeVideo(i)">Delete</button> -->
+
+
+
+  
+

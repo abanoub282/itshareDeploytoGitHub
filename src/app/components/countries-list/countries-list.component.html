@@ -1,0 +1,15 @@
+<style>
+    .countries-list {
+      color: green;
+    }
+</style>
+<select 
+class="dropdown-list"
+class="countries-list"
+[(ngModel)]="country" (change)="countryChanged()">
+    <option disabled selected value="">select country</option>
+    <option 
+        *ngFor="let country of countries"
+        [selected]="country.value == currentCountry" 
+        [value]="country.value">{{ country.name }}</option>
+</select>

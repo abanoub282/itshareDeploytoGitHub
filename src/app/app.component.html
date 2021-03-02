@@ -1,0 +1,291 @@
+<!-- The content below is only a placeholder and can be replaced. -->
+ <!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}! This Is My First Applicatuion
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+
+
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+
+  <router-outlet></router-outlet>
+
+    <h1>this is app component {{ title }}</h1>
+    
+  <video-list></video-list> -->
+
+<!-- <div (click)="divClicked()">
+  <button 
+  (click)="$event.stopPropagation(); handleClick($event)"
+  class="btn btn-primary">submit</button>
+ </div>
+
+ <input type="text" (keyup.enter)="handleInput($event)">
+
+ <br><br>
+
+ <ul class="list-group">
+    <li 
+    *ngFor="let post of posts; let first = first"
+    [class.active]="currentId === post.id"
+    
+    (click)="activatePost(post.id)"
+    class="list-group-item">{{ post.title }}</li>
+</ul> -->
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3">
+      <br><br>
+
+      <div class="form-group">
+
+        <input
+         class="form-control"
+         type="text"
+         [(ngModel)]="userData.firstName"
+         (keyup.enter)="handleInput()">
+
+      </div>
+
+      {{ userData.firstName }}
+
+    </div>
+  </div>
+</div> -->
+
+<!-- <div>{{ item.title | uppercase }}</div>
+<div>{{ item.price | currency: 'EGY': true: '4.1-1' }}</div>
+<div>{{ item.sold | number: '4.0-3'}}</div>
+<div>{{ item.rating | number: "2.2-2" }}</div>
+<div>{{ item.date | date : 'shortDate'}}</div> -->
+
+<!-- <div>{{ postDescription | summary: 20 }}</div> -->
+
+<!-- <countries-list [selectedCountry]="selectedCountry" (changed)="countryChanged"></countries-list> -->
+
+<!-- <bootstrap-jumbotron>
+  <ng-container class="haeading">Fluid jumbotron</ng-container>
+  <p class="lead">This Is a modified jumbotron that occupies the entire horizontal space of its parent</p>
+</bootstrap-jumbotron> -->
+
+<!-- <video-list></video-list> -->
+
+<!-- <tabbed-content></tabbed-content> -->
+
+<!-- <video-list></video-list> -->
+
+<!-- <ITShare></ITShare> -->
+
+<!-- <my-first></my-first> -->
+
+<!-- {{title}}  Interpolation -->
+
+<!-- <course></course> -->
+
+<!-- <button type="button" class="btn btn-primary"
+[class.active] = "isActive"
+>Primary</button>
+
+<button [style.backgroundColor]="isActive? 'yellow' : 'blue'">ITShare</button> -->
+
+<!-- <button (click)="methodName()">Save</button> -->
+
+<!-- <div (click)="divClicked()">
+  <button (click)="btnClicked($event)">Save</button>
+</div> -->
+
+<!-- Binding One Way -->
+
+<!-- <input (keyup.enter)="onkeyup($event)" type="text"> -->
+<!-- <input [value]="nameval" 
+(keyup.enter)= "firstname=$event.target.value;onkeyup(firstname)" type="text">
+
+<div>{{nameval}}</div> -->
+
+<!-- Banana Binding Way=> -->
+
+<!-- <input [(ngModel)]="firstName"
+(keyup.enter)= "onkeyup(firstName)" type="text">
+
+<div>{{firstName}}</div> -->
+
+<!-- <favorite></favorite> -->
+
+<!-- <div>
+  {{employees.fullName | uppercase | lowercase}}
+  <br>
+  {{employees.salary | currency: 'usd':true}}
+  <br>
+  {{employees.hiringDate | date: 'shortDate'}}
+</div> -->
+
+<!-- <div>
+  {{ title | summary: 5 }}
+</div> -->
+
+<!-- <favorite [isfavorite]="favState"
+(change)="favChanged()"
+>
+
+</favorite> -->
+
+<!-- <angular-test></angular-test> -->
+
+<!-- <panel>
+  <ng-container class="heading">My Custom Header Here</ng-container>
+  <ng-container class="body">ITShre Couses</ng-container>
+</panel> -->
+
+<!-- <ul>
+  <li *ngFor="let p of persons ; let i=index">
+  {{i + 1}} - {{p}}
+  </li>
+</ul> -->
+
+<!-- <ul *ngFor="let group of peopleByCountry">
+  <li>{{group.country}}</li>
+
+  <ul>
+    <li *ngFor="let people of group.names">
+      {{people.name}}
+    </li>
+  </ul>
+</ul>  -->
+
+<!-- <button (click)="onAdd()" >Add</button>
+
+<ul>
+  <li *ngFor="let course of courses ; trackBy: trackByCourse">
+    <button (click)="onRemove(course)">Remove</button>  {{course.courseName}}
+  </li>
+</ul> -->
+
+ <!-- <button (click)="onAdd()" >Add</button>
+
+<div *ngIf="courses.length > 0">
+  <ul>
+    <li *ngFor="let course of courses ; trackBy: trackByCourse">
+      <button (click)="onRemove(course)">Remove</button>  {{course.courseName}}
+    </li>
+  </ul> 
+</div>
+
+<div *ngIf="courses.length === 0">
+  No Courses Yet
+</div> -->
+
+
+  <!-- <button (click)="onAdd()" >Add</button>
+
+  <div *ngIf="courses.length > 0 ; then coursesList else noCourses"></div>
+  <ng-template #coursesList>
+    <ul>
+      <li *ngFor="let course of courses ; trackBy: trackByCourse">
+        <button (click)="onRemove(course)">Remove</button>  {{course.courseName}}
+      </li>
+    </ul> 
+  </ng-template>
+
+  <ng-template #noCourses>
+    No Couses Yet
+  </ng-template> -->
+
+  <!-- <button (click)="onAdd()" >Add</button>
+
+  <div [hidden]="courses.length === 0">
+    <ul>
+      <li *ngFor="let course of courses ; trackBy: trackByCourse">
+        <button (click)="onRemove(course)">Remove</button>  {{course.courseName}}
+      </li>
+    </ul> 
+  </div>
+
+  <div [hidden]="courses.length > 0">
+    No Couses Yet
+  </div> -->
+
+  <!-- <ul class="nav nav-pills">
+    <li [class.active]="defaultView === 'Courses'">
+      <a (click)="setView('Courses')">Courses</a>
+    </li>
+    <li [class.active]="defaultView === 'certfications'">
+      <a (click)="setView('certfications')">certfications</a>
+    </li>
+  </ul>
+
+<div [ngSwitch]="defaultView">
+  <div *ngSwitchCase="'Courses'">List of Courses</div>
+  <div *ngSwitchCase="'certfications'">List of certfications</div>
+</div> -->
+
+<!-- <favorite></favorite> -->
+
+<!-- <button
+[style.backgroundColor]="whatColor? 'yellow' : 'gray'"
+[style.color]="whatColor? 'red' : 'green'"
+[style.fontWeight]="whatColor? 'bold' : 'normal'"
+
+[ngStyle]=
+"
+{
+  'backgroundColor' : whatColor? 'yellow' : 'gray' , 
+  'color' : whatColor? 'red' : 'green',
+  'fontWeight' : whatColor? 'bold' : 'normal'
+
+}
+
+"
+>
+Click Me
+</button> -->
+
+<!-- <input type="text" InputFormat [format]="'toUppercase'"> -->
+
+<!-- <login></login> -->
+
+
+<!-- <input type="text" #title class="form-control" (keyup.enter)= "createPost(title)">
+<ul class="list-group">
+  <li *ngFor="let post of posts" class="list-group-item">
+  <button class="btn btn-outline-info" (click)= "
+  updatePost(post,title.value)">Update</button>
+   {{ post.title }}
+  </li>
+</ul> -->
+
+<!-- <table class="table">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let post of posts">
+      <th>{{post.userId}}</th>
+      <th>{{post.body}}</th>
+    </tr>
+  </tbody>
+</table> -->
+
+<nav-bar></nav-bar>
+
+<main role="main" class="container">
+
+  <router-outlet></router-outlet>
+
+</main>
